@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha pagina</title>
+    <style>
+        body{
+            background-color: rgb(57, 223, 223);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        h1{
+            color: rgb(109, 109, 7);
+        }
+        h2{
+            color: rgb(99, 141, 16);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Minha Pagina</h1>
+    <h2>Calculadora simples em js</h2>
+    <script>
+        var x = Number(window.prompt('Qual o Primeiro valor'))
+        var y = Number(window.prompt('Qual o Segundo valor'))
+        var r1 = x + y
+        var r2 = x * y
+        document.write(`A soma entre os valores vai ser ${r1} e a multiplicaçao vai ser ${r2}`)
+    </script>
+</body>
+</html>
