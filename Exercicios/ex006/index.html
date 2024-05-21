@@ -8,26 +8,32 @@
         body{
             background-color: rgb(57, 223, 223);
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 20px;
+            font-size: 18pt;
         }
         h1{
             color: rgb(109, 109, 7);
         }
-        h2{
-            color: rgb(99, 141, 16);
+        p{
+            font-size: 30px;
+            color: rgb(62, 87, 12);
         }
 
     </style>
 </head>
 <body>
-    <h1>Minha Pagina</h1>
-    <h2>Calculadora simples em js</h2>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Js</p>
+    <div class="msg">Clique em mim</div>
     <script>
-        var x = Number(window.prompt('Qual o Primeiro valor'))
-        var y = Number(window.prompt('Qual o Segundo valor'))
-        var r1 = x + y
-        var r2 = x * y
-        document.write(`A soma entre os valores vai ser ${r1} e a multiplicaçao vai ser ${r2}`)
-    </script>
+        var corpo = document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var d = window.document.getElementById('msg')
+        //d.style.background= 'red'
+        //d.innerText= 'estou esperando...'
+        //window.document.getElementById('msg').innerText = 'oi'
+        var d = document.querySelector('div.msg')
+        d.style.color = 'blue'
+     </script>
 </body>
 </html>
