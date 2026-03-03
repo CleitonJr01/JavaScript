@@ -1,11 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ex005</title>
 </head>
+<style>
+    body{
+        background: rgb(45, 134, 237);
+        color: white;
+        font: normal 18pt Arial;
+    }
+</style>
 <body>
-    
+    <h1>Iniciando Estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JS</p>
+    <div id="msg">Clique Aqui</div>
+
+    <script>
+        let m1 = window.document.getElementById('msg')
+        let p1 = window.document.getElementsByTagName('p')[0]
+        document.writeln(p1.innerText)
+        m1.style.background = 'green'
+        m1.innerText = 'Estou aguardando...'
+    </script>
 </body>
 </html>
