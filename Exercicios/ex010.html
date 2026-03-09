@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex010</title>
+</head>
+<body>
+    <h1>DETRAN</h1>
+    <input type="number" name="txvel" id="txvel"> Km/h
+    <input type="button" value="Verificar" onclick="calcular()" >
+    <div id="txres"></div>
+
+<script> 
+
+    function calcular(){
+        let txtv = window.document.getElementById('txvel')
+        let res = window.document.getElementById('txres')
+        let vel = Number(txtv.value)
+        res.innerHTML = `Sua velocidade é ${vel} Km/h`
+        if(vel > 60){
+            res.innerHTML += `<p>MULTADO</p>`
+        }
+        res.innerHTML += `<p>Dirija com Segurança</p>`
+    }
+
+</script>
+
+</body>
+</html>
